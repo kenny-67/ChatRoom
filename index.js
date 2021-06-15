@@ -1,3 +1,4 @@
+// jquerry code responsible for hiding and showing the friend drawer section
 $(".friend-drawer-onhover").on("click", function () {
   console.log("clicked");
   $(".chat-bubble").hide("slow").show("slow");

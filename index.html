@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- pulling bootstrap from a cdn -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -11,13 +12,16 @@
       crossorigin="anonymous"
     />
     <link rel="styleSheet" href="style.css" />
-    <title>Document</title>
+    <title>Chat app</title>
   </head>
 
   <body>
+    <!-- bootstrap container class to give the page a default padding -->
     <div class="container">
       <div class="row no-gutters">
+        <!-- bootatrap grid for the left section of the app. set to take 4 colums of the viewport -->
         <div class="col-md-4 border-right left-section">
+          <!-- responsible for the top left section of the app housing the icons -->
           <div class="settings-tray">
             <img
               class="profile-image"
@@ -41,6 +45,7 @@
               <li><a href="login.html">Log Out</a></li>
             </ul>
           </div>
+          <!-- the search input field in the app -->
           <div class="search-box">
             <div class="input-wrapper">
               <img src="images/icons/search.svg" alt="s" />
@@ -51,6 +56,7 @@
               />
             </div>
           </div>
+          <!-- friend selector section  -->
           <section class="drawer">
             <div class="friend-drawer friend-drawer-onhover">
               <img src="images/img2.jpg" alt="p" class="profile-image" />
@@ -108,6 +114,7 @@
             <hr />
           </section>
         </div>
+        <!-- bootstrap grid set to take 8 colums of the viewport, the right section of the app -->
         <div class="col-md-8 right-section">
           <div class="settings-tray right">
             <div class="friend-drawer no-gutters friend-drawer-gray">
@@ -127,8 +134,11 @@
               </span>
             </div>
           </div>
+          <!-- the main section for chats -->
           <div class="chat-pannel">
             <div class="row no-gutters">
+              <!-- each chat bubble takes 3 colums of the available space
+              the offset class is used to push the response to the right of the first chat -->
               <div class="col-md-3">
                 <div class="chat-bubble chat-bubble-left">Hello dude!</div>
               </div>
@@ -173,7 +183,7 @@
                 <div class="chat-bubble chat-bubble-left">Hello dude!</div>
               </div>
             </div>
-
+            <!-- section for inputing messages and sending them -->
             <div class="row">
               <div class="col-12">
                 <div class="chat-box-tray">
@@ -189,6 +199,7 @@
       </div>
     </div>
 
+    <!-- pulling jquerry from a cdn -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
